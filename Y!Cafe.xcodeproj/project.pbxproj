@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB187E201989B32000205AF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB187E1F1989B32000205AF1 /* Foundation.framework */; };
+		CB187E221989B32000205AF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB187E211989B32000205AF1 /* CoreGraphics.framework */; };
+		CB187E241989B32000205AF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB187E231989B32000205AF1 /* UIKit.framework */; };
+		CB187E2A1989B32000205AF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB187E281989B32000205AF1 /* InfoPlist.strings */; };
+		CB187E2C1989B32000205AF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E2B1989B32000205AF1 /* main.m */; };
+		CB187E301989B32000205AF1 /* YCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E2F1989B32000205AF1 /* YCAppDelegate.m */; };
+		CB187E331989B32000205AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB187E311989B32000205AF1 /* Main.storyboard */; };
+		CB187E361989B32000205AF1 /* YCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E351989B32000205AF1 /* YCViewController.m */; };
+		CB187E381989B32000205AF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB187E371989B32000205AF1 /* Images.xcassets */; };
+		CB187E3F1989B32000205AF1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB187E3E1989B32000205AF1 /* XCTest.framework */; };
+		CB187E401989B32000205AF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB187E1F1989B32000205AF1 /* Foundation.framework */; };
+		CB187E411989B32000205AF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB187E231989B32000205AF1 /* UIKit.framework */; };
+		CB187E491989B32000205AF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB187E471989B32000205AF1 /* InfoPlist.strings */; };
+		CB187E4B1989B32000205AF1 /* Y_CafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E4A1989B32000205AF1 /* Y_CafeTests.m */; };
+		CB187E6A1989B37B00205AF1 /* YCCafeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E551989B37B00205AF1 /* YCCafeModel.m */; };
+		CB187E6B1989B37B00205AF1 /* YCcafeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E571989B37B00205AF1 /* YCcafeTableViewController.m */; };
+		CB187E6C1989B37B00205AF1 /* YCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E591989B37B00205AF1 /* YCConnection.m */; };
+		CB187E6D1989B37B00205AF1 /* YCCorIconsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E5B1989B37B00205AF1 /* YCCorIconsModel.m */; };
+		CB187E6E1989B37B00205AF1 /* YCDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E5D1989B37B00205AF1 /* YCDataProvider.m */; };
+		CB187E6F1989B37B00205AF1 /* YCMealTypeHoursModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E5F1989B37B00205AF1 /* YCMealTypeHoursModel.m */; };
+		CB187E701989B37B00205AF1 /* YCMealTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E611989B37B00205AF1 /* YCMealTypeModel.m */; };
+		CB187E711989B37B00205AF1 /* YCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E631989B37B00205AF1 /* YCMenuViewController.m */; };
+		CB187E721989B37B00205AF1 /* YCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E651989B37B00205AF1 /* YCSecondViewController.m */; };
+		CB187E731989B37B00205AF1 /* YCStationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E671989B37B00205AF1 /* YCStationModel.m */; };
+		CB187E741989B37B00205AF1 /* YCWeekDayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E691989B37B00205AF1 /* YCWeekDayTableViewController.m */; };
+		CB187E77198AB15F00205AF1 /* YCStationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E76198AB15F00205AF1 /* YCStationParser.m */; };
+		CB187E7B198AC97A00205AF1 /* YCMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB187E7A198AC97A00205AF1 /* YCMenuTableViewCell.m */; };
+		CB33D8701989B597002A46C4 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB33D85E1989B597002A46C4 /* AFHTTPRequestOperation.m */; };
+		CB33D8711989B597002A46C4 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB33D8601989B597002A46C4 /* AFHTTPRequestOperationManager.m */; };
+		CB33D8721989B597002A46C4 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB33D8621989B597002A46C4 /* AFHTTPSessionManager.m */; };
+		CB33D8731989B597002A46C4 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB33D8651989B597002A46C4 /* AFNetworkReachabilityManager.m */; };
+		CB33D8741989B597002A46C4 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB33D8671989B597002A46C4 /* AFSecurityPolicy.m */; };
+		CB33D8751989B597002A46C4 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB33D8691989B597002A46C4 /* AFURLConnectionOperation.m */; };
+		CB33D8761989B597002A46C4 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CB33D86B1989B597002A46C4 /* AFURLRequestSerialization.m */; };
+		CB33D8771989B597002A46C4 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CB33D86D1989B597002A46C4 /* AFURLResponseSerialization.m */; };
+		CB33D8781989B597002A46C4 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB33D86F1989B597002A46C4 /* AFURLSessionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB187E421989B32000205AF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB187E141989B32000205AF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB187E1B1989B32000205AF1;
+			remoteInfo = "Y!Cafe";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB187E1C1989B32000205AF1 /* Y!Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Y!Cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB187E1F1989B32000205AF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB187E211989B32000205AF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CB187E231989B32000205AF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CB187E271989B32000205AF1 /* Y!Cafe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Y!Cafe-Info.plist"; sourceTree = "<group>"; };
+		CB187E291989B32000205AF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB187E2B1989B32000205AF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB187E2D1989B32000205AF1 /* Y!Cafe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Y!Cafe-Prefix.pch"; sourceTree = "<group>"; };
+		CB187E2E1989B32000205AF1 /* YCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCAppDelegate.h; sourceTree = "<group>"; };
+		CB187E2F1989B32000205AF1 /* YCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCAppDelegate.m; sourceTree = "<group>"; };
+		CB187E321989B32000205AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB187E341989B32000205AF1 /* YCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCViewController.h; sourceTree = "<group>"; };
+		CB187E351989B32000205AF1 /* YCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCViewController.m; sourceTree = "<group>"; };
+		CB187E371989B32000205AF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB187E3D1989B32000205AF1 /* Y!CafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Y!CafeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB187E3E1989B32000205AF1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CB187E461989B32000205AF1 /* Y!CafeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Y!CafeTests-Info.plist"; sourceTree = "<group>"; };
+		CB187E481989B32000205AF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB187E4A1989B32000205AF1 /* Y_CafeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Y_CafeTests.m; sourceTree = "<group>"; };
+		CB187E541989B37B00205AF1 /* YCCafeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCafeModel.h; sourceTree = "<group>"; };
+		CB187E551989B37B00205AF1 /* YCCafeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCafeModel.m; sourceTree = "<group>"; };
+		CB187E561989B37B00205AF1 /* YCcafeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCcafeTableViewController.h; sourceTree = "<group>"; };
+		CB187E571989B37B00205AF1 /* YCcafeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCcafeTableViewController.m; sourceTree = "<group>"; };
+		CB187E581989B37B00205AF1 /* YCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCConnection.h; sourceTree = "<group>"; };
+		CB187E591989B37B00205AF1 /* YCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCConnection.m; sourceTree = "<group>"; };
+		CB187E5A1989B37B00205AF1 /* YCCorIconsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCorIconsModel.h; sourceTree = "<group>"; };
+		CB187E5B1989B37B00205AF1 /* YCCorIconsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCorIconsModel.m; sourceTree = "<group>"; };
+		CB187E5C1989B37B00205AF1 /* YCDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCDataProvider.h; sourceTree = "<group>"; };
+		CB187E5D1989B37B00205AF1 /* YCDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCDataProvider.m; sourceTree = "<group>"; };
+		CB187E5E1989B37B00205AF1 /* YCMealTypeHoursModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMealTypeHoursModel.h; sourceTree = "<group>"; };
+		CB187E5F1989B37B00205AF1 /* YCMealTypeHoursModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMealTypeHoursModel.m; sourceTree = "<group>"; };
+		CB187E601989B37B00205AF1 /* YCMealTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMealTypeModel.h; sourceTree = "<group>"; };
+		CB187E611989B37B00205AF1 /* YCMealTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMealTypeModel.m; sourceTree = "<group>"; };
+		CB187E621989B37B00205AF1 /* YCMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMenuViewController.h; sourceTree = "<group>"; };
+		CB187E631989B37B00205AF1 /* YCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMenuViewController.m; sourceTree = "<group>"; };
+		CB187E641989B37B00205AF1 /* YCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSecondViewController.h; sourceTree = "<group>"; };
+		CB187E651989B37B00205AF1 /* YCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSecondViewController.m; sourceTree = "<group>"; };
+		CB187E661989B37B00205AF1 /* YCStationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCStationModel.h; sourceTree = "<group>"; };
+		CB187E671989B37B00205AF1 /* YCStationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCStationModel.m; sourceTree = "<group>"; };
+		CB187E681989B37B00205AF1 /* YCWeekDayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCWeekDayTableViewController.h; sourceTree = "<group>"; };
+		CB187E691989B37B00205AF1 /* YCWeekDayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCWeekDayTableViewController.m; sourceTree = "<group>"; };
+		CB187E75198AB15F00205AF1 /* YCStationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCStationParser.h; sourceTree = "<group>"; };
+		CB187E76198AB15F00205AF1 /* YCStationParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCStationParser.m; sourceTree = "<group>"; };
+		CB187E79198AC97A00205AF1 /* YCMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMenuTableViewCell.h; sourceTree = "<group>"; };
+		CB187E7A198AC97A00205AF1 /* YCMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMenuTableViewCell.m; sourceTree = "<group>"; };
+		CB1E8380199EA9F8008E2E8E /* YCConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCConstant.h; path = "Y!Cafe/YCConstant.h"; sourceTree = "<group>"; };
+		CB33D85D1989B597002A46C4 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		CB33D85E1989B597002A46C4 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		CB33D85F1989B597002A46C4 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		CB33D8601989B597002A46C4 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		CB33D8611989B597002A46C4 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		CB33D8621989B597002A46C4 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		CB33D8631989B597002A46C4 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CB33D8641989B597002A46C4 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		CB33D8651989B597002A46C4 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		CB33D8661989B597002A46C4 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		CB33D8671989B597002A46C4 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		CB33D8681989B597002A46C4 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		CB33D8691989B597002A46C4 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		CB33D86A1989B597002A46C4 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		CB33D86B1989B597002A46C4 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		CB33D86C1989B597002A46C4 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		CB33D86D1989B597002A46C4 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		CB33D86E1989B597002A46C4 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		CB33D86F1989B597002A46C4 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB187E191989B32000205AF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB187E221989B32000205AF1 /* CoreGraphics.framework in Frameworks */,
+				CB187E241989B32000205AF1 /* UIKit.framework in Frameworks */,
+				CB187E201989B32000205AF1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB187E3A1989B32000205AF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB187E3F1989B32000205AF1 /* XCTest.framework in Frameworks */,
+				CB187E411989B32000205AF1 /* UIKit.framework in Frameworks */,
+				CB187E401989B32000205AF1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB187E131989B32000205AF1 = {
+			isa = PBXGroup;
+			children = (
+				CB1E8380199EA9F8008E2E8E /* YCConstant.h */,
+				CB33D85C1989B597002A46C4 /* AFNetworking */,
+				CB187E251989B32000205AF1 /* Y!Cafe */,
+				CB187E441989B32000205AF1 /* Y!CafeTests */,
+				CB187E1E1989B32000205AF1 /* Frameworks */,
+				CB187E1D1989B32000205AF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB187E1D1989B32000205AF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB187E1C1989B32000205AF1 /* Y!Cafe.app */,
+				CB187E3D1989B32000205AF1 /* Y!CafeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB187E1E1989B32000205AF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB187E1F1989B32000205AF1 /* Foundation.framework */,
+				CB187E211989B32000205AF1 /* CoreGraphics.framework */,
+				CB187E231989B32000205AF1 /* UIKit.framework */,
+				CB187E3E1989B32000205AF1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB187E251989B32000205AF1 /* Y!Cafe */ = {
+			isa = PBXGroup;
+			children = (
+				CB187E78198AC95800205AF1 /* Menu */,
+				CB33D87B198AAE6D002A46C4 /* DataProvider */,
+				CB33D87A1989B5B4002A46C4 /* Connection */,
+				CB33D8791989B5AF002A46C4 /* Model */,
+				CB187E561989B37B00205AF1 /* YCcafeTableViewController.h */,
+				CB187E571989B37B00205AF1 /* YCcafeTableViewController.m */,
+				CB187E5A1989B37B00205AF1 /* YCCorIconsModel.h */,
+				CB187E5B1989B37B00205AF1 /* YCCorIconsModel.m */,
+				CB187E641989B37B00205AF1 /* YCSecondViewController.h */,
+				CB187E651989B37B00205AF1 /* YCSecondViewController.m */,
+				CB187E681989B37B00205AF1 /* YCWeekDayTableViewController.h */,
+				CB187E691989B37B00205AF1 /* YCWeekDayTableViewController.m */,
+				CB187E2E1989B32000205AF1 /* YCAppDelegate.h */,
+				CB187E2F1989B32000205AF1 /* YCAppDelegate.m */,
+				CB187E311989B32000205AF1 /* Main.storyboard */,
+				CB187E341989B32000205AF1 /* YCViewController.h */,
+				CB187E351989B32000205AF1 /* YCViewController.m */,
+				CB187E371989B32000205AF1 /* Images.xcassets */,
+				CB187E261989B32000205AF1 /* Supporting Files */,
+			);
+			path = "Y!Cafe";
+			sourceTree = "<group>";
+		};
+		CB187E261989B32000205AF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB187E271989B32000205AF1 /* Y!Cafe-Info.plist */,
+				CB187E281989B32000205AF1 /* InfoPlist.strings */,
+				CB187E2B1989B32000205AF1 /* main.m */,
+				CB187E2D1989B32000205AF1 /* Y!Cafe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB187E441989B32000205AF1 /* Y!CafeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB187E4A1989B32000205AF1 /* Y_CafeTests.m */,
+				CB187E451989B32000205AF1 /* Supporting Files */,
+			);
+			path = "Y!CafeTests";
+			sourceTree = "<group>";
+		};
+		CB187E451989B32000205AF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB187E461989B32000205AF1 /* Y!CafeTests-Info.plist */,
+				CB187E471989B32000205AF1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB187E78198AC95800205AF1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CB187E621989B37B00205AF1 /* YCMenuViewController.h */,
+				CB187E631989B37B00205AF1 /* YCMenuViewController.m */,
+				CB187E79198AC97A00205AF1 /* YCMenuTableViewCell.h */,
+				CB187E7A198AC97A00205AF1 /* YCMenuTableViewCell.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		CB33D85C1989B597002A46C4 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CB33D85D1989B597002A46C4 /* AFHTTPRequestOperation.h */,
+				CB33D85E1989B597002A46C4 /* AFHTTPRequestOperation.m */,
+				CB33D85F1989B597002A46C4 /* AFHTTPRequestOperationManager.h */,
+				CB33D8601989B597002A46C4 /* AFHTTPRequestOperationManager.m */,
+				CB33D8611989B597002A46C4 /* AFHTTPSessionManager.h */,
+				CB33D8621989B597002A46C4 /* AFHTTPSessionManager.m */,
+				CB33D8631989B597002A46C4 /* AFNetworking.h */,
+				CB33D8641989B597002A46C4 /* AFNetworkReachabilityManager.h */,
+				CB33D8651989B597002A46C4 /* AFNetworkReachabilityManager.m */,
+				CB33D8661989B597002A46C4 /* AFSecurityPolicy.h */,
+				CB33D8671989B597002A46C4 /* AFSecurityPolicy.m */,
+				CB33D8681989B597002A46C4 /* AFURLConnectionOperation.h */,
+				CB33D8691989B597002A46C4 /* AFURLConnectionOperation.m */,
+				CB33D86A1989B597002A46C4 /* AFURLRequestSerialization.h */,
+				CB33D86B1989B597002A46C4 /* AFURLRequestSerialization.m */,
+				CB33D86C1989B597002A46C4 /* AFURLResponseSerialization.h */,
+				CB33D86D1989B597002A46C4 /* AFURLResponseSerialization.m */,
+				CB33D86E1989B597002A46C4 /* AFURLSessionManager.h */,
+				CB33D86F1989B597002A46C4 /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			path = "Y!Cafe/AFNetworking";
+			sourceTree = "<group>";
+		};
+		CB33D8791989B5AF002A46C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB187E601989B37B00205AF1 /* YCMealTypeModel.h */,
+				CB187E611989B37B00205AF1 /* YCMealTypeModel.m */,
+				CB187E541989B37B00205AF1 /* YCCafeModel.h */,
+				CB187E551989B37B00205AF1 /* YCCafeModel.m */,
+				CB187E661989B37B00205AF1 /* YCStationModel.h */,
+				CB187E671989B37B00205AF1 /* YCStationModel.m */,
+				CB187E5E1989B37B00205AF1 /* YCMealTypeHoursModel.h */,
+				CB187E5F1989B37B00205AF1 /* YCMealTypeHoursModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CB33D87A1989B5B4002A46C4 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				CB187E581989B37B00205AF1 /* YCConnection.h */,
+				CB187E591989B37B00205AF1 /* YCConnection.m */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		CB33D87B198AAE6D002A46C4 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				CB187E5C1989B37B00205AF1 /* YCDataProvider.h */,
+				CB187E5D1989B37B00205AF1 /* YCDataProvider.m */,
+				CB187E75198AB15F00205AF1 /* YCStationParser.h */,
+				CB187E76198AB15F00205AF1 /* YCStationParser.m */,
+			);
+			name = DataProvider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB187E1B1989B32000205AF1 /* Y!Cafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB187E4E1989B32000205AF1 /* Build configuration list for PBXNativeTarget "Y!Cafe" */;
+			buildPhases = (
+				CB187E181989B32000205AF1 /* Sources */,
+				CB187E191989B32000205AF1 /* Frameworks */,
+				CB187E1A1989B32000205AF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Y!Cafe";
+			productName = "Y!Cafe";
+			productReference = CB187E1C1989B32000205AF1 /* Y!Cafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB187E3C1989B32000205AF1 /* Y!CafeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB187E511989B32000205AF1 /* Build configuration list for PBXNativeTarget "Y!CafeTests" */;
+			buildPhases = (
+				CB187E391989B32000205AF1 /* Sources */,
+				CB187E3A1989B32000205AF1 /* Frameworks */,
+				CB187E3B1989B32000205AF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB187E431989B32000205AF1 /* PBXTargetDependency */,
+			);
+			name = "Y!CafeTests";
+			productName = "Y!CafeTests";
+			productReference = CB187E3D1989B32000205AF1 /* Y!CafeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB187E141989B32000205AF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Snehal Patil";
+				TargetAttributes = {
+					CB187E3C1989B32000205AF1 = {
+						TestTargetID = CB187E1B1989B32000205AF1;
+					};
+				};
+			};
+			buildConfigurationList = CB187E171989B32000205AF1 /* Build configuration list for PBXProject "Y!Cafe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB187E131989B32000205AF1;
+			productRefGroup = CB187E1D1989B32000205AF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB187E1B1989B32000205AF1 /* Y!Cafe */,
+				CB187E3C1989B32000205AF1 /* Y!CafeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB187E1A1989B32000205AF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB187E381989B32000205AF1 /* Images.xcassets in Resources */,
+				CB187E2A1989B32000205AF1 /* InfoPlist.strings in Resources */,
+				CB187E331989B32000205AF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB187E3B1989B32000205AF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB187E491989B32000205AF1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB187E181989B32000205AF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB187E701989B37B00205AF1 /* YCMealTypeModel.m in Sources */,
+				CB187E711989B37B00205AF1 /* YCMenuViewController.m in Sources */,
+				CB187E741989B37B00205AF1 /* YCWeekDayTableViewController.m in Sources */,
+				CB187E721989B37B00205AF1 /* YCSecondViewController.m in Sources */,
+				CB33D8771989B597002A46C4 /* AFURLResponseSerialization.m in Sources */,
+				CB33D8751989B597002A46C4 /* AFURLConnectionOperation.m in Sources */,
+				CB187E6F1989B37B00205AF1 /* YCMealTypeHoursModel.m in Sources */,
+				CB187E6D1989B37B00205AF1 /* YCCorIconsModel.m in Sources */,
+				CB33D8711989B597002A46C4 /* AFHTTPRequestOperationManager.m in Sources */,
+				CB187E6A1989B37B00205AF1 /* YCCafeModel.m in Sources */,
+				CB33D8741989B597002A46C4 /* AFSecurityPolicy.m in Sources */,
+				CB187E731989B37B00205AF1 /* YCStationModel.m in Sources */,
+				CB187E6C1989B37B00205AF1 /* YCConnection.m in Sources */,
+				CB33D8761989B597002A46C4 /* AFURLRequestSerialization.m in Sources */,
+				CB33D8731989B597002A46C4 /* AFNetworkReachabilityManager.m in Sources */,
+				CB187E7B198AC97A00205AF1 /* YCMenuTableViewCell.m in Sources */,
+				CB187E301989B32000205AF1 /* YCAppDelegate.m in Sources */,
+				CB187E6E1989B37B00205AF1 /* YCDataProvider.m in Sources */,
+				CB187E6B1989B37B00205AF1 /* YCcafeTableViewController.m in Sources */,
+				CB33D8701989B597002A46C4 /* AFHTTPRequestOperation.m in Sources */,
+				CB187E361989B32000205AF1 /* YCViewController.m in Sources */,
+				CB33D8721989B597002A46C4 /* AFHTTPSessionManager.m in Sources */,
+				CB187E2C1989B32000205AF1 /* main.m in Sources */,
+				CB33D8781989B597002A46C4 /* AFURLSessionManager.m in Sources */,
+				CB187E77198AB15F00205AF1 /* YCStationParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB187E391989B32000205AF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB187E4B1989B32000205AF1 /* Y_CafeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB187E431989B32000205AF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB187E1B1989B32000205AF1 /* Y!Cafe */;
+			targetProxy = CB187E421989B32000205AF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB187E281989B32000205AF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB187E291989B32000205AF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CB187E311989B32000205AF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB187E321989B32000205AF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB187E471989B32000205AF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB187E481989B32000205AF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB187E4C1989B32000205AF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB187E4D1989B32000205AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB187E4F1989B32000205AF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Y!Cafe/Y!Cafe-Prefix.pch";
+				INFOPLIST_FILE = "Y!Cafe/Y!Cafe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CB187E501989B32000205AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Y!Cafe/Y!Cafe-Prefix.pch";
+				INFOPLIST_FILE = "Y!Cafe/Y!Cafe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CB187E521989B32000205AF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Y!Cafe.app/Y!Cafe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Y!Cafe/Y!Cafe-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Y!CafeTests/Y!CafeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CB187E531989B32000205AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Y!Cafe.app/Y!Cafe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Y!Cafe/Y!Cafe-Prefix.pch";
+				INFOPLIST_FILE = "Y!CafeTests/Y!CafeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB187E171989B32000205AF1 /* Build configuration list for PBXProject "Y!Cafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB187E4C1989B32000205AF1 /* Debug */,
+				CB187E4D1989B32000205AF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB187E4E1989B32000205AF1 /* Build configuration list for PBXNativeTarget "Y!Cafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB187E4F1989B32000205AF1 /* Debug */,
+				CB187E501989B32000205AF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB187E511989B32000205AF1 /* Build configuration list for PBXNativeTarget "Y!CafeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB187E521989B32000205AF1 /* Debug */,
+				CB187E531989B32000205AF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB187E141989B32000205AF1 /* Project object */;
+}
